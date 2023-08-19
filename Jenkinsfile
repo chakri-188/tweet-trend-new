@@ -4,12 +4,15 @@ pipeline {
             label 'maven'
         }
     }
-    
+environment {
+    PATH = ""
+    PATH = "/opt/apache-maven-3.9.4/bin:$PATH"
+}
     stages {
-        stage('Clone-code') {
-            steps {
-                git branch: 'main', credentialsId: 'maven-server-cred', url: 'https://github.com/chakri-188/tweet-trend-new.git'
-            }
+      stage("build"){
+        steps {
+            sh 'mvn clean deploy'
         }
+      }
     }
 }
