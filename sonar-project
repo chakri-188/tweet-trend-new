@@ -1,6 +1,6 @@
 sonar.verbose=true
 sonar.organization=valaxy03
-sonar.projectKey=valaxy03-key_twittertrend
+sonar.projectKey=valaxy03_twittertrend
 sonar.projectName=twittertrend 
 sonar.language=java
 sonar.sourceEncoding=UTF-8
