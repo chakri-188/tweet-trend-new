@@ -1,7 +1,7 @@
 sonar.verbose=true
-sonar.organization=valaxy03-keytwittertrend
-sonar.projectKey=valaxy03-keytwittertrend_twittertrend
-sonar.projectName=twittertrend 
+sonar.organization=apsis-at
+sonar.projectKey=apsis-at_apsis
+sonar.projectName=apsis
 sonar.language=java
 sonar.sourceEncoding=UTF-8
 sonar.sources=.
