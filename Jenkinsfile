@@ -15,17 +15,7 @@ environment {
         }
       }
     
-    stage('SonarQube analysis') {
-    environment {
-      scannerHome = tool 'valaxy-sonar-scanner'
-    }
-    steps{
-    withSonarQubeEnv('valaxy-sonarqube-server') { // If you have configured more
-      sh "${scannerHome}/bin/sonar-scanner"    
-    }
-    }
-  }
-             stage("Jar Publish") {
+          stage("Jar Publish") {
             steps {
                 script {
                         echo '<--------------- Jar Publish Started --------------->'
